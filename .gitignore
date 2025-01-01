@@ -18,6 +18,11 @@ Thumbs.db
 # Log files
 *.log
 
+# Frontend Mentor instructions
+design/
+figma/
+instructions/
+
 # Dependency directories
 node_modules/
 

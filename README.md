@@ -12,7 +12,7 @@ Your challenge is to build a QR code component and get it looking as close to th
 
 ### Screenshot
 
-_(Add a screenshot of your completed project here)_
+![preview](images/preview.jpg)
 
 ### Links
 
