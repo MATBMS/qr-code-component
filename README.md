@@ -16,8 +16,8 @@ Your challenge is to build a QR code component and get it looking as close to th
 
 ### Links
 
-- [Solution URL](#) _(Add your Frontend Mentor solution page link here)_
-- [Live Site URL](#) _(Add the link to your live demo here)_
+- [Solution URL](https://github.com/MATBMS/qr-code-component)
+- [Live Site URL](https://matbms.github.io/qr-code-component/)
 
 ## My Process
 
@@ -29,8 +29,6 @@ Your challenge is to build a QR code component and get it looking as close to th
 - Mobile-first workflow
 
 ### What I Learned
-
-_(Include any key takeaways, challenges, or coding techniques you learned while building this project.)_
 
 ```css
 /* Example of a CSS snippet I learned */
