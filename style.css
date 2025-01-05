@@ -1,12 +1,64 @@
 * {
+  /* Resetting margin and padding for all elements */
   margin: 0;
   padding: 0;
 }
 
-.container {
-  background-color: red;
+main {
+  /* Centering the container vertically and horizontally */
+  background-color: #D5E1EF;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  /* Flexbox for vertical alignment, white background, padding, and rounded corners */
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  background-color: white;
+  padding: 16px 16px 40px 16px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+img {
+  /* Fixed size for the image and rounded corners */
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+.content {
+  /* Fixed width and margin for spacing */
+  width: 256px;
+  margin-top: 24px;
+}
+
+h1,
+p {
+  /* Consistent font and center alignment for headings and paragraphs */
+  font-family: "Outfit", serif;
+  text-align: center;
+}
+
+h1 {
+  /* Styling for the main heading */
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  color: #1F314F;
+}
+
+p {
+  /* Styling for the paragraph text */
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #68778D;
+  margin-top: 16px;
 }
