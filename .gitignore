@@ -1,0 +1,46 @@
+# ──────────────────────────────────────────
+# macOS
+# ──────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.prettierignore
+
+# ──────────────────────────────────────────
+# Node.js / JavaScript
+# ──────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+.env
+.env.*
+dist/
+build/
+
+# ──────────────────────────────────────────
+# Editors and IDEs
+# ──────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ──────────────────────────────────────────
+# Project-specific
+# ──────────────────────────────────────────
+
+# Frontend Mentor paid design assets — do not commit to public repos
+design/
+*.sketch
+*.fig
+*.xd
