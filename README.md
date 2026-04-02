@@ -9,7 +9,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [Extras](#extras)
   - [AI Collaboration](#ai-collaboration)
 
 ## Overview
@@ -28,20 +28,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - Semantic HTML5 markup
+- CSS Custom Properties
 - Flexbox
 - Mobile-first workflow
 
-### What I learned
+### Extras
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+As a User,<br>
+I need to be able to zoom on the QR Code,<br>
+So that I can easly scan it.
 
 ### AI Collaboration
 

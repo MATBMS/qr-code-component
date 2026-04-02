@@ -73,10 +73,16 @@ main {
 
 /* Image */
 
+.img-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 img {
   width: 288px;
   height: 288px;
   border-radius: 10px;
+  transition: all 0.75s;
 }
 
 /* Text content */
@@ -88,4 +94,10 @@ img {
   padding: 0 var(--spacing-200);
   gap: var(--spacing-200);
   text-align: center;
+}
+
+/* Extra feature */
+
+img:hover {
+  transform: scale(1.5);
 }
