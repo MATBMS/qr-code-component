@@ -2,10 +2,15 @@
 
 :root {
   /* Colors */
-  --color-state-900: #1f314f;
-  --color-state-500: #68778d;
-  --color-state-300: #d5e1ef;
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
   --color-white: #ffffff;
+
+  /* Spacing */
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
 }
 
 /* Typography */
@@ -35,8 +40,52 @@ h1 {
 
 p {
   font-family: "Outfit Regular";
-  color: var(--color-slate-900);
+  color: var(--color-slate-500);
   font-size: 15px;
   line-height: 140%; /* 21px */
   letter-spacing: 0.2px;
+}
+
+/* Main */
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-slate-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+
+.card {
+  width: calc(288px + 16px + 16px);
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+    var(--spacing-200);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+}
+
+/* Image */
+
+img {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+/* Text content */
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--spacing-200);
+  gap: var(--spacing-200);
+  text-align: center;
 }
