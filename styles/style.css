@@ -1,0 +1,42 @@
+/* Custom Properties */
+
+:root {
+  /* Colors */
+  --color-state-900: #1f314f;
+  --color-state-500: #68778d;
+  --color-state-300: #d5e1ef;
+  --color-white: #ffffff;
+}
+
+/* Typography */
+
+@font-face {
+  font-family: "Outfit Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Outfit.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Outfit Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Outfit.ttf") format("ttf");
+}
+
+h1 {
+  font-family: "Outfit Bold";
+  color: var(--color-slate-900);
+  font-size: 22px;
+  line-height: 120%; /* 26.4px */
+}
+
+p {
+  font-family: "Outfit Regular";
+  color: var(--color-slate-900);
+  font-size: 15px;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.2px;
+}
