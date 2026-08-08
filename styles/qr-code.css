@@ -31,12 +31,26 @@ body {
 
 /* IMAGE QR CODE */
 
+.image-qr-code-container {
+  /* layout */
+  width: 288px;
+  height: 288px;
+  /* style */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .image-qr-code {
   /* layout */
   width: 288px;
   height: 288px;
   /* style */
   border-radius: 10px;
+  transition: all ease-in 0.3s;
+}
+
+.image-qr-code:hover {
+  transform: scale(1.5);
 }
 
 /* QR CODE CONTENT */

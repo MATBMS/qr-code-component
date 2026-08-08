@@ -35,7 +35,6 @@ The card layout doesn't shift, so it's ideal if you haven't learned about buildi
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### Features
@@ -45,9 +44,9 @@ The card layout doesn't shift, so it's ideal if you haven't learned about buildi
 
 ### Extra feature
 
-**As a**<br>
-**I need to**<br>
-**So that I can**<br>
+**As a** a user<br>
+**I need to** be able to zoom on the QR Code<br>
+**So that I can** to make it easier to scan<br>
 
 ### What I learned
 
