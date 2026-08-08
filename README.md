@@ -1,4 +1,4 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - QR code component
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
@@ -26,7 +26,7 @@ The card layout doesn't shift, so it's ideal if you haven't learned about buildi
 ### Links
 
 - Solution URL: [Repository URL](https://github.com/MATBMS/qr-code-component)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://matbms-qr-code-component.netlify.app/)
 
 ## My process
 
