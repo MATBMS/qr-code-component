@@ -1,0 +1,52 @@
+/* BODY */
+
+body {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  /* style */
+  background-color: var(--color-slate-300);
+}
+
+/* QR CODE CARD */
+
+.qr-code-card {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300);
+  width: 288px;
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+    var(--spacing-200);
+  /* style */
+  background-color: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* IMAGE QR CODE */
+
+.image-qr-code {
+  /* layout */
+  width: 288px;
+  height: 288px;
+  /* style */
+  border-radius: 10px;
+}
+
+/* QR CODE CONTENT */
+
+.qr-code-content {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200);
+  padding: 0 var(--spacing-200);
+  text-align: center;
+}

@@ -51,6 +51,26 @@ The card layout doesn't shift, so it's ideal if you haven't learned about buildi
 
 ### What I learned
 
+#### Import local fonts
+
+```css
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit/Outfit-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fonts/Outfit/Outfit-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+```
+
 ### AI Collaboration
 
 No AI has been used.
