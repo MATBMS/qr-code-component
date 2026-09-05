@@ -93,6 +93,23 @@ body {
   height: 55.5556%;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .qr-card__code {
+    transition: transform 250ms ease-in-out;
+  }
+
+  .qr-card__image:hover .qr-card__code {
+    /* Enlarge the code to 80% of its container. */
+    transform: scale(1.44);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qr-card__code {
+    transition: none;
+  }
+}
+
 .qr-card__text {
   display: grid;
   gap: var(--spacing-200);
