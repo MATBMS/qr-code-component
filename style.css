@@ -62,6 +62,7 @@ body {
 /* QR card */
 .qr-card {
   width: 100%;
+  min-width: 0;
   max-width: 20rem;
   padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
   border-radius: 20px;
@@ -116,7 +117,7 @@ body {
   margin-top: var(--spacing-300);
   padding-inline: var(--spacing-200);
   text-align: center;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .qr-card h1 {

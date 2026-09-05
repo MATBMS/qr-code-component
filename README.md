@@ -30,17 +30,16 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
+I learned how to use Codex to create this project without writing a single line of code myself. I practiced describing the result I wanted, reviewing the implementation, and giving feedback to improve it.
+
 ### Extra feature
 
-As a...  
-I need to...  
-So that I can...
+As a desktop visitor scanning the page with my phone, I want the QR code to enlarge when I hover over its blue square, so that the code occupies more space and is easier to aim my camera at.
 
 ### AI Collaboration
 
