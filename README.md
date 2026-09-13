@@ -34,8 +34,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Repository URL: [GitHub](https://github.com/MATBMS/qr-code-component)
-- Live Site URL: [Netlify](https://matbms-qr-code-component.netlify.app/)
+- [Repository URL](https://github.com/MATBMS/qr-code-component)
+- [Live Site URL](https://matbms.github.io/qr-code-component/)
 
 ## My process
 
