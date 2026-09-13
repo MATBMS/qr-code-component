@@ -3,19 +3,20 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Internal Fonts */
 
 @font-face {
   font-family: "Outfit";
-  src: url("./fonts/Outfit-Regular.ttf") format("tff");
+  src: url("./fonts/Outfit-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url("./fonts/Outfit-Bold.ttf") format("tff");
+  src: url("./fonts/Outfit-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 
@@ -34,18 +35,64 @@
 }
 
 /* Typography */
+body {
+  font-family: Outfit, sans-serif;
+  text-align: center;
+}
+
+h1,
 .text-preset-1 {
-  font-family: Outfit;
   font-size: 22px;
   font-weight: bold;
   line-height: 120%;
   letter-spacing: 0px;
+  color: var(--color-slate-900);
 }
 
+p,
 .text-preset-2 {
-  font-family: Outfit;
   font-size: 15px;
   font-weight: normal;
   line-height: 140%;
   letter-spacing: 0.2px;
+  color: var(--color-slate-500);
+}
+
+/* Body */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-slate-300);
+}
+
+/* QR Card */
+
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 320px;
+  height: 499px;
+  padding: 16px 16px 40px 16px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  box-shadow: 0px 25px 25px 0px rgb(00, 00, 00 / 4.77%);
+}
+
+/* QR Code Image */
+.qr-code-image {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+/* QR Code Content */
+.qr-code-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0px 16px;
 }

@@ -52,13 +52,13 @@ To make weights work correctly with variables, I structure your stylesheet like 
 ```css
 @font-face {
   font-family: "Outfit";
-  src: url("./fonts/Outfit-Regular.ttf") format("tff");
+  src: url("./fonts/Outfit-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Outfit";
-  src: url("./fonts/Outfit-Bold.ttf") format("tff");
+  src: url("./fonts/Outfit-Bold.ttf") format("truetype");
   font-weight: bold;
 }
 ```
@@ -81,7 +81,79 @@ To make weights work correctly with variables, I structure your stylesheet like 
 }
 ```
 
-Once the custom properties are set up on the `:root` element, I can access them anywhere in my project.
+Once the custom properties are set up on the `:root` element, you can access them anywhere in your project.
+
+```css
+body {
+  background-color: var(--color-slate-300);
+}
+```
+
+#### Media Queries
+
+Media queries allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other features or characteristics such as screen resolution or orientation, aspect ratio, browser viewport width or height, user preferences such as preferring reduced motion, data usage, or transparency.
+
+Many range features can be prefixed with "min-" or "max-" to express "minimum condition" or "maximum condition" constraints. For example, this CSS will apply styles only if your browser's viewport width is equal to or narrower than 1440px:
+
+```css
+/* MOBILE (375px and up) */
+@media (min-width: 375px) {
+}
+
+/* TABLET (768px and up) */
+@media (min-width: 768px) {
+}
+
+/* DESKTOP (1440px and up) */
+@media (min-width: 1440px) {
+}
+```
+
+#### Update User Snippet
+
+To update your user snippets in Visual Studio Code (VS Code), you need to open the relevant snippet JSON configuration file via the Command Palette and modify its properties.
+
+##### Step-by-Step Guide
+
+1. **Open the command palette**: Press `Cmd + Shift + P`.
+1. **Find the snippet settings**: Type `Preferences: Configure User Snippets` and press `Enter`.
+1. **Select your snippet file**:
+   - To update an existing snippet, chose the specific **language** (e.g., `javascript.json`, `python.json`) or the **global snippet file** you created previously.
+   - If you are creating a new one, select "**New Global Snippets file\***..." and name it.
+1. **Edit the JSON code**: Modify the fields inside the JSON object.
+1. **Save the file**: Press `Cmd + S`. The changes will take effect immediately.
+
+##### Example
+
+```json
+{
+  "Responsive Media Queries": {
+    "prefix": "responsive",
+    "body": [
+      "/* MOBILE (375px and up) */",
+      "@media (min-width: 375px) {$1}",
+      "",
+      "/* TABLET (768px and up) */",
+      "@media (min-width: 768px) {$2}",
+      "",
+      "/* DESKTOP (1440px and up) */",
+      "@media (min-width: 1440px) {$3}"
+    ],
+    "description": "Insert responsive media queries template with accessible em units"
+  }
+}
+```
+
+##### Key Properties to Update
+
+- **scope**: (Global files only) A comma-separated list of language identifiers restricting where the snippet works.
+- **prefix**: The abbreviation or shortcut word typed to trigger IntelliSense.
+- **body**: An array of strings representing the lines of code. Use `$1`, `$2` for tab stops, and `$0` for the final cursor position.
+- **description**: The helper text displayed in the auto-complete dropdown menu.
+
+#### Box Shadow
+
+The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
 
 ### AI Collaboration
 
