@@ -26,6 +26,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Extra feature
 
+**As a** User,<br>
+**I need to** be able to zoom on the QR code<br>
+**So that** it will be easier to scan the QR code
+
 ### Links
 
 - Repository URL: [GitHub](https://github.com/MATBMS/qr-code-component)
@@ -154,6 +158,26 @@ To update your user snippets in Visual Studio Code (VS Code), you need to open t
 #### Box Shadow
 
 The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.
+
+#### Animate on hover
+
+To zoom into an image smoothly on hover without causing layout shifts, pair `transform: scale()` with CSS `transition`, and place the image inside a container with `overflow: hidden`.
+
+```css
+.qr-code-container {
+  overflow: hidden; /* Clips the zoomed image within the container bounds */
+  border-radius: 10px;
+}
+
+.qr-code-image {
+  /* Animate the transform property smoothly */
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.qr-code-image:hover {
+  transform: scale(1.5);
+}
+```
 
 ### AI Collaboration
 

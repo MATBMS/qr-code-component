@@ -83,10 +83,20 @@ body {
 }
 
 /* QR Code Image */
+.qr-code-container {
+  overflow: hidden; /* Clips the zoomed image within the container bounds */
+  border-radius: 10px;
+}
+
 .qr-code-image {
   width: 288px;
   height: 288px;
-  border-radius: 10px;
+  /* Animate the transform property smoothly */
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.qr-code-image:hover {
+  transform: scale(1.5);
 }
 
 /* QR Code Content */
