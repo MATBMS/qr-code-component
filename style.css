@@ -79,7 +79,7 @@ body {
   padding: 16px 16px 40px 16px;
   border-radius: 20px;
   background-color: var(--color-white);
-  box-shadow: 0px 25px 25px 0px rgb(00, 00, 00 / 4.77%);
+  box-shadow: 0px 25px 25px 0px rgba(00, 00, 00, 0.0477);
 }
 
 /* QR Code Image */
