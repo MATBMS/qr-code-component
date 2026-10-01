@@ -1,0 +1,48 @@
+# Design files (kept locally, never in the repo)
+design/
+*.fig
+*.sketch
+*.xd
+*.psd
+*.ai
+*.afdesign
+*.afphoto
+
+# AI assistant instructions (local only, never in the repo)
+CLAUDE.md
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+Icon\r
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+
+# Dependencies and build output (not used in this project, but just in case)
+node_modules/
+dist/
+build/
+.cache/
+
+# Temporary files
+*.tmp
+*.bak
