@@ -1,5 +1,6 @@
 /* Reset */
 * {
+  box-sizing: border-box; /* padding and borders count inside the width/height we set */
   margin: 0;
   padding: 0;
 }
@@ -47,4 +48,65 @@
   --spacing-200: 1rem;
   --spacing-300: 1.5rem;
   --spacing-500: 2.5rem;
+}
+
+/* Page: full-height background that centers the card */
+.page {
+  display: flex;
+  flex-direction: column; /* explicit column so align-items centers horizontally */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh; /* mobile browsers: ignores the collapsing address bar; older browsers keep the line above */
+  padding: var(--spacing-200); /* keeps the card off the screen edges at 320px */
+  background-color: var(--color-slate-300);
+}
+
+/* Card: white container holding the image and text */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300); /* space between image and text block */
+  width: 100%; /* shrinks with the screen on very small devices... */
+  max-width: 20rem; /* ...but never exceeds the design's 320px */
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500); /* top, sides, bottom */
+  border-radius: 1.25rem; /* 20px */
+  background-color: var(--color-white);
+  box-shadow: 0 1.5625rem 1.5625rem rgba(0, 0, 0, 0.05); /* from Figma "card-shadow": y 25, blur 25, 5% black */
+}
+
+/* Image: fills the card width, keeps its proportions */
+.card__image {
+  width: 100%;
+  height: auto; /* follows the width so the square image is never stretched */
+  border-radius: 0.625rem; /* 10px */
+}
+
+/* Base typography: every element inherits the font from body */
+body {
+  font-family: var(--font-family);
+}
+
+/* Text block: groups heading and paragraph */
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200); /* 16px between heading and paragraph */
+  padding: 0 var(--spacing-200); /* 16px on the sides, none top/bottom */
+  text-align: center;
+}
+
+.card__title {
+  font-size: var(--text-preset-1-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--text-preset-1-line-height);
+  color: var(--color-slate-900);
+}
+
+.card__description {
+  font-size: var(--text-preset-2-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  color: var(--color-slate-500);
 }

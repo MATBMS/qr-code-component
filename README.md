@@ -35,6 +35,22 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
+#### `min-height: 100vh` and `100dvh`
+
+To center the card vertically, `.page` must be at least as tall as the screen. I used `min-height` instead of `height` so the page can still grow if the content is taller (for example on a very small screen).
+
+```css
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+```
+
+- `vh` is 1% of the viewport height. On mobile browsers, `100vh` is measured as if the address bar were hidden, so the page ends up taller than the visible area and the card is not truly centered (or a scrollbar appears).
+- `dvh` ("dynamic viewport height") follows the visible area as the address bar shows or hides, so `100dvh` always matches what the user actually sees.
+- I kept both lines. A browser that doesn't understand `dvh` ignores that line and keeps `100vh`, so it's a safe fallback.
+- It only works well with `box-sizing: border-box`: otherwise the page padding is added on top of 100% of the height and creates a scrollbar.
+
 ### AI Collaboration
 
 This project is **AI-driven**: I built it together with [Claude](https://claude.com/claude-code) (Claude Code), which acted both as the coder and as a mentor.
