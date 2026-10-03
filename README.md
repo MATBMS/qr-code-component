@@ -18,7 +18,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](./images/preview.jpg)
+Desktop view:
+
+![Desktop view of the QR code card, centered on a light blue background](./images/desktop-screenshot.png)
+
+Desktop view with the mouse over the card, the QR code zoomed in:
+
+![Desktop view with the mouse over the card, the QR code zoomed in](./images/desktop-hover-screenshot.png)
 
 ### Links
 
@@ -40,7 +46,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned

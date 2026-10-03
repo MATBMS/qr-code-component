@@ -28,8 +28,6 @@
   --color-slate-300: #d5e1ef;
   --color-slate-500: #68778d;
   --color-slate-900: #1f314f;
-  --color-stone-800: #312e2c;
-  --color-blue-600: #2c7dfa;
 
   --font-family: "Outfit", sans-serif;
   --font-weight-regular: 400;
@@ -48,6 +46,11 @@
   --spacing-200: 1rem;
   --spacing-300: 1.5rem;
   --spacing-500: 2.5rem;
+}
+
+/* Base typography: every element inherits the font from body */
+body {
+  font-family: var(--font-family);
 }
 
 /* Page: full-height background that centers the card */
@@ -97,9 +100,11 @@
   }
 }
 
-/* Base typography: every element inherits the font from body */
-body {
-  font-family: var(--font-family);
+/* Respect the OS "reduce motion" setting: the image still zooms, but instantly */
+@media (prefers-reduced-motion: reduce) {
+  .card__image {
+    transition: none;
+  }
 }
 
 /* Text block: groups heading and paragraph */
