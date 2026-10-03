@@ -11,6 +11,9 @@ design/
 # AI assistant instructions (local only, never in the repo)
 CLAUDE.md
 
+# Project docs and feature specs (local only, never in the repo)
+docs/
+
 # macOS
 .DS_Store
 .AppleDouble

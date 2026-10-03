@@ -7,6 +7,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [Features](#features)
+  - [Extra feature](#extra-feature)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -22,6 +24,14 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - Repository URL: [https://github.com/MATBMS/qr-code-component](https://github.com/MATBMS/qr-code-component)
 - Live Site URL: [https://matbms.github.io/qr-code-component/](https://matbms.github.io/qr-code-component/)
+
+## Features
+
+### Extra feature
+
+**As a** visitor on a desktop computer,<br>
+**I want to** see the QR code zoom in when I hover over the card,<br>
+**so that** it is easier for me to scan it with my phone.
 
 ## My process
 

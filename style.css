@@ -75,11 +75,26 @@
   box-shadow: 0 1.5625rem 1.5625rem rgba(0, 0, 0, 0.05); /* from Figma "card-shadow": y 25, blur 25, 5% black */
 }
 
-/* Image: fills the card width, keeps its proportions */
+/* Media: frame around the image; clips anything that grows outside it */
+.card__media {
+  overflow: hidden; /* hides the part of the image that sticks out (needed for the zoom) */
+  border-radius: 0.625rem; /* 10px, moved here so the frame, not the image, rounds the corners */
+}
+
+/* Image: fills the frame width, keeps its proportions */
 .card__image {
+  display: block; /* removes the small gap an inline image leaves under itself */
   width: 100%;
   height: auto; /* follows the width so the square image is never stretched */
-  border-radius: 0.625rem; /* 10px */
+  transition: transform 0.3s ease; /* on the normal state so it animates both in and out */
+}
+
+/* Zoom: hovering anywhere on the card scales the image up inside its frame.
+   Only for devices with a real mouse; touch screens fake :hover on tap and would get stuck zoomed */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .card__image {
+    transform: scale(1.4); /* 1.4 = 140% of the original size */
+  }
 }
 
 /* Base typography: every element inherits the font from body */
