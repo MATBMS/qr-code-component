@@ -1,0 +1,50 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts (local files, only the two weights from the style guide) */
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* show fallback text immediately, swap when Outfit is ready */
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit/static/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens */
+:root {
+  --color-white: #ffffff;
+  --color-slate-300: #d5e1ef;
+  --color-slate-500: #68778d;
+  --color-slate-900: #1f314f;
+  --color-stone-800: #312e2c;
+  --color-blue-600: #2c7dfa;
+
+  --font-family: "Outfit", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Text preset 1: heading (22px, bold) */
+  --text-preset-1-size: 1.375rem;
+  --text-preset-1-line-height: 1.2;
+
+  /* Text preset 2: body (15px, regular) */
+  --text-preset-2-size: 0.9375rem;
+  --text-preset-2-line-height: 1.4;
+  --text-preset-2-letter-spacing: 0.2px;
+
+  /* Spacing scale (rem, from 16px) */
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-500: 2.5rem;
+}
