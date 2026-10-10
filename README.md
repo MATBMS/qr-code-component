@@ -6,6 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Features](#features)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -17,6 +18,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Screenshot
 
 ![Screenshot Preview](./docs/preview.jpg)
+
+### Features
+
+**As a** User<br>
+**I need to** be able to zoom on the QR Code<br>
+**So that I** can scan the QR code easily
 
 ### Links
 

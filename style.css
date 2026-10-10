@@ -86,12 +86,21 @@ body {
   gap: 24px;
 }
 
-/* qr code */
+/* qr code image */
+
+.card-img-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
 
 .card-img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.card:hover .card-img {
+  transform: scale(1.5);
 }
 
 /* card content */
