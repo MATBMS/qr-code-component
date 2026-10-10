@@ -38,21 +38,67 @@
   font-display: swap;
 }
 
-.text-preset-1 {
+h1,
+p {
   font-family: "Outfit";
-  font-size: 22px;
-  color: var(--color-slate-900);
   font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
+  text-align: center;
 }
 
-.text-preset-2 {
-  font-family: "Outfit";
-  font-size: 15px;
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
   color: var(--color-slate-900);
-  font-style: normal;
+}
+
+p {
+  font-size: 15px;
   font-weight: 400;
   line-height: 140%;
   letter-spacing: 0.2px;
+  color: var(--color-slate-500);
+}
+
+/* body */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-slate-300);
+}
+
+/* card */
+
+.card {
+  width: 320px;
+  max-height: 500px;
+  padding: 16px 16px 40px 16px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* qr code */
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* card content */
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 256px;
 }
