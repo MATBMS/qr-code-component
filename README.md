@@ -17,7 +17,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
+#### Preview
+
 ![Screenshot Preview](./docs/preview.jpg)
+
+#### Desktop Screenshot
+
+![Desktop Screenshot](./docs/desktop-screenshot.png)
+
+#### Desktop On Hover Screenshot
+
+![Desktop On Hover Screenshot](./docs/desktop-hover-screenshot.png)
 
 ### Features
 
@@ -27,8 +37,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Repository URL: [GitHub Repo](https://github.com/MATBMS/qr-code-component)
+- Live Site URL: [GitHub Page](https://matbms.github.io/qr-code-component/)
 
 ## My process
 
@@ -37,7 +47,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
