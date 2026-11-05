@@ -10,12 +10,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [AI Collaboration](#ai-collaboration)
 
 ## Overview
 
 ### Screenshot
+
+#### Design preview
+
+![Preview of the QR code component design](./images/preview.jpg)
 
 #### Desktop
 
@@ -45,8 +48,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
 
 ### AI Collaboration
 

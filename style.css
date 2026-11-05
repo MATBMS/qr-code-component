@@ -28,7 +28,6 @@
   --color-slate-300: #d5e1ef;
   --color-slate-500: #68778d;
   --color-slate-900: #1f314f;
-  --color-stone-800: #312e2c;
 
   /* Typography */
   --font-family: "Outfit", sans-serif;
@@ -39,6 +38,13 @@
   --spacing-200: 1rem; /* 16px */
   --spacing-300: 1.5rem; /* 24px */
   --spacing-500: 2.5rem; /* 40px */
+
+  /* Radius */
+  --radius-100: 0.625rem; /* 10px */
+  --radius-200: 1.25rem; /* 20px */
+
+  /* Shadow */
+  --shadow-card: 0 25px 25px rgba(0, 0, 0, 0.05);
 }
 
 /* Base */
@@ -61,14 +67,14 @@ body {
   gap: var(--spacing-300);
   padding: var(--spacing-200) var(--spacing-200) var(--spacing-500);
   background-color: var(--color-white);
-  border-radius: 1.25rem; /* 20px */
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius-200);
+  box-shadow: var(--shadow-card);
 }
 
 .card__image {
   aspect-ratio: 1; /* keeps the box square */
   overflow: hidden; /* crops the zoomed image */
-  border-radius: 0.625rem; /* 10px */
+  border-radius: var(--radius-100);
 }
 
 .card__qr {
@@ -82,6 +88,13 @@ body {
 @media (hover: hover) {
   .card__qr:hover {
     transform: scale(1.5);
+  }
+}
+
+/* Users who asked their system for less motion: no zoom animation */
+@media (prefers-reduced-motion: reduce) {
+  .card__qr {
+    transition: none;
   }
 }
 
