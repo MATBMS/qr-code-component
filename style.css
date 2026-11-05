@@ -66,10 +66,23 @@ body {
 }
 
 .card__image {
+  aspect-ratio: 1; /* keeps the box square */
+  overflow: hidden; /* crops the zoomed image */
+  border-radius: 0.625rem; /* 10px */
+}
+
+.card__qr {
   display: block;
   width: 100%;
-  aspect-ratio: 1; /* keeps the image square */
-  border-radius: 0.625rem; /* 10px */
+  height: 100%;
+  transition: transform 0.3s ease; /* smooth zoom in and out */
+}
+
+/* Only devices with a real hover (mouse), not touch screens */
+@media (hover: hover) {
+  .card__qr:hover {
+    transform: scale(1.5);
+  }
 }
 
 .card__text {

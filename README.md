@@ -6,6 +6,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Extra Feature](#extra-feature)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -16,7 +17,19 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![Design preview for the QR code component coding challenge](./images/preview.jpg)
+#### Desktop
+
+![Desktop screenshot of the QR code component](./images/desktop-screenshot.png)
+
+#### Desktop on hover
+
+![Desktop screenshot of the QR code component while hovering the QR code](./images/desktop-on-hover-screenshot.png)
+
+### Extra Feature
+
+**As a** desktop user,<br>
+**I want to** see the QR code zoom in when I hover it,<br>
+**so that** it is easier to scan.
 
 ### Links
 
