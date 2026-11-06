@@ -10,6 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
   - [AI Collaboration](#ai-collaboration)
 
 ## Overview
@@ -46,6 +47,17 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+
+### What I learned
+
+- **`transform` vs. `width` / `height`:** `transform: scale()` changes how the image looks without changing the layout, so the text and the card do not move. A bigger `width` and `height` would make the box really bigger and push everything around it. `scale` also grows the image from its center, in all directions, and is smoother to animate.
+- **Where to write the `transition`:** I write it on the normal rule (`.card__qr`), not inside `:hover`. This way it animates both when the mouse enters and when it leaves. Inside `:hover`, only the zoom in would be animated and the image would jump back when the mouse leaves.
+- **`:root` and `box-sizing: border-box`:**
+  - `:root` is the top element of the page (`html`). CSS variables declared there are inherited by every element, so I can use them anywhere.
+  - `box-sizing: border-box` makes the `width` include the padding and the border. A card with `max-width: 20rem` stays 20rem wide, with no calculation.
+- **`main` and the empty `alt`:**
+  - `main` marks the main content of the page (only one per page). Screen readers can jump straight to it, which they cannot do with a `div`.
+  - An empty `alt` tells screen readers to skip the image, as if it were decoration. It is fine for a decorative image, but wrong for the QR code, which carries information.
 
 ### AI Collaboration
 
